@@ -83,9 +83,11 @@ nav ul li a:hover::before{
     padding: 10px 15px;
     text-decoration: none;
     /* transition: ; */
+    transition: transform 0.3s ease, padding 0.3s ease; /* Transición suave para cualquier cambio */
 }
 
-.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+/* Colores de cada red social... (esto ya lo tenés igual) */
+.social ul li .icon-facebook {background:#3b5998;} 
 .social ul li .icon-twitter {background: #00abf0;}
 .social ul li .icon-instagram {background: #E4405F;}
 .social ul li .icon-whatsapp {background: #25D366;}
@@ -93,9 +95,11 @@ nav ul li a:hover::before{
 
 .social ul li a:hover{
     /* transform: ; */
+    transform: translateX(15px); /* Desplaza el botón 15px hacia la derecha */
+    
     /* padding: ; */
+    /* (Opcional) Si en vez de transform prefirieras ensanchar el botón, usarías padding-right o padding-left acá, pero transform ya cumple la consigna perfectamente */
 }
-
 
   /* Contenido */
 .container{
